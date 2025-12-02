@@ -1,0 +1,14 @@
+# Proteger archivos sensibles
+<FilesMatch "\.(env|config|sql|db)$">
+    Order allow,deny
+    Deny from all
+</FilesMatch>
+
+# Proteger directorios sensibles
+RedirectMatch 404 ^/(config|core|models|controllers|includes)/.*$
+
+# Configuración para URLs limpias (futura mejora)
+# RewriteEngine On
+# RewriteCond %{REQUEST_FILENAME} !-f
+# RewriteCond %{REQUEST_FILENAME} !-d
+# RewriteRule ^(.*)$ public/$1 [L]
