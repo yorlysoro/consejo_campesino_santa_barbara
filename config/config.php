@@ -1,8 +1,8 @@
 <?php
 // Configuración general del sistema
 define('APP_NAME', 'Consejo Campesino Santa Bárbara');
-define('APP_URL', 'http://localhost/consejo-campesino');
-define('TIMEZONE', 'America/El_Salvador');
+define('APP_URL', 'http://localhost/consejo_campesino_santa_barbara');
+define('TIMEZONE', 'America/Caracas');
 define('PASSWORD_MIN_LENGTH', 8);
 define('SESSION_NAME', 'consejo_session');
 

@@ -3,6 +3,18 @@
 ## Descripción
 Sistema modular y extensible de autenticación con roles y permisos.
 
+## Crear base de datos
+create database consejo_campesino;
+
+## Crear usuario 
+create user 'reidy'@localhost identified by 'reidy';
+
+## Asignar permisos a usuario
+GRANT ALL PRIVILEGES ON consejo_campesino.* TO 'reidy'@localhost;
+
+## Guardar Permisos
+FLUSH PRIVILEGES;
+
 ## Instalación
 
 1. **Configurar Base de Datos:**
@@ -13,7 +25,7 @@ Sistema modular y extensible de autenticación con roles y permisos.
     http://localhost/consejo-campesino/install.php
     Credenciales Admin:
         Email: admin@consejo.com
-        Password: Admin123!
+        Password: Admin123#
     Eliminar install.php después de la instalación
 
 Estructura

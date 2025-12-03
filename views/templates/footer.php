@@ -3,6 +3,7 @@
             <p>&copy; <?= date('Y') ?> <?= APP_NAME ?>. Todos los derechos reservados.</p>
         </footer>
     </div>
-    <script src="<?= APP_URL ?>/public/js/main.js"></script>
+    <!-- ✅ CORREGIDO: Usar la función asset() -->
+    <script src="<?= asset('js/main.js') ?>"></script>
 </body>
 </html>

@@ -4,7 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title><?= APP_NAME ?> - <?= $pageTitle ?? 'Sistema' ?></title>
-    <link rel="stylesheet" href="<?= APP_URL ?>/public/css/style.css">
+    <!-- Usar la función asset() -->
+    <link rel="stylesheet" href="<?= asset('css/style.css') ?>">
+    <!-- ✅ PARA FUTUROS FAVICON -->
+    <!-- <link rel="icon" href="<?= asset('img/favicon.ico') ?>"> -->
 </head>
 <body>
     <div class="container">

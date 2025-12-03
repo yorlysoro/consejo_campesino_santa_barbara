@@ -4,7 +4,7 @@ require_once __DIR__ . '/../includes/init.php';
 $auth = new Auth();
 
 if (!$auth->isLoggedIn()) {
-    header('Location: ' . APP_URL . '/public/login.php');
+    header('Location: ' . APP_URL . '/login.php');
     exit;
 }
 

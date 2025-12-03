@@ -91,7 +91,7 @@ try {
     ");
 
     // Crear usuario admin (contraseña: Admin123!)
-    $adminPassword = password_hash('Admin123!', PASSWORD_DEFAULT);
+    $adminPassword = password_hash('Admin123#', PASSWORD_DEFAULT);
     $pdo->exec("
         INSERT IGNORE INTO usuarios (nombre, email, password, rol_id) VALUES 
         ('Administrador del Sistema', 'admin@consejo.com', '$adminPassword', 1)
@@ -99,7 +99,7 @@ try {
 
     echo "<h1>✅ Instalación completada exitosamente</h1>";
     echo "<p>Usuario admin: <strong>admin@consejo.com</strong></p>";
-    echo "<p>Contraseña: <strong>Admin123!</strong></p>";
+    echo "<p>Contraseña: <strong>Admin123#</strong></p>";
     echo "<p><strong>IMPORTANTE:</strong> Elimina el archivo install.php</p>";
     echo "<p><a href='public/login.php'>Ir al login</a></p>";
 

@@ -17,7 +17,7 @@ class AuthController {
         $password = $data['password']; // No sanitizar password para no alterarla
 
         if ($this->auth->login($email, $password)) {
-            return ['success' => true, 'redirect' => 'public/index.php'];
+            return ['success' => true, 'redirect' => '/public/index.php'];
         }
 
         return ['success' => false, 'message' => 'Credenciales inválidas'];

@@ -13,7 +13,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $result = $controller->handleLogin($_POST);
     
     if ($result['success']) {
-        header('Location: ' . $result['redirect']);
+        header('Location: ' . APP_URL . $result['redirect']);
         exit;
     } else {
         $message = ['type' => 'danger', 'text' => $result['message']];

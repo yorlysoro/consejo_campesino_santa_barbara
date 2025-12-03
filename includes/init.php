@@ -1,4 +1,9 @@
 <?php
+// Cargar configuración
+require_once __DIR__ . '/../config/config.php';
+require_once __DIR__ . '/../config/database.php';
+// Helpers
+require_once __DIR__ . '/functions.php';
 // Inicialización del sistema
 
 // Configuración de reporte de errores
@@ -8,9 +13,7 @@ ini_set('display_errors', 1); // Cambiar a 0 en producción
 // Zona horaria
 date_default_timezone_set(TIMEZONE);
 
-// Cargar configuración
-require_once __DIR__ . '/../config/config.php';
-require_once __DIR__ . '/../config/database.php';
+
 
 // Autoloader de clases
 spl_autoload_register(function ($className) {
